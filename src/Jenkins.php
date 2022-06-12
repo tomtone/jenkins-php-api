@@ -297,7 +297,7 @@ class Jenkins
             throw new \RuntimeException('Error during json_decode');
         }
 
-        return new Jenkins\Job($infos, $this);
+        return new Jenkins\Job($infos, $this, $jobName);
     }
 
     /**
