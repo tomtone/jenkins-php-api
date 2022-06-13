@@ -104,6 +104,14 @@ class Job
     }
 
     /**
+     * @return int
+     */
+    public function getNextBuildNumber()
+    {
+        return (int)$this->job->nextBuildNumber;
+    }
+
+    /**
      * @return string
      */
     public function getColor()
